@@ -5,7 +5,7 @@ function init(){
 document.body.addEventListener('keydown', function(event) {
   (event.detail || event.which);
   kcdetector(event);
-  // Code to check value of below
+  // Test code to check values of below events.
   // console.log("This is what edetail produces" + event.detail);
   // console.log("This is what ewhich produces" + event.which);
   // console.log("This is what elocation produces" + event.location);
