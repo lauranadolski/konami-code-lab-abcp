@@ -3,7 +3,7 @@ let index = 0;
 
 function init(){
 document.body.addEventListener('keydown', function(event) {
-  event.which;
+  (event.detail || event.which);
   kcdetector(event);
   // console.log("This is what edetail produces" + event.detail);
   // console.log("This is what ewhich produces" + event.which);
@@ -12,10 +12,8 @@ document.body.addEventListener('keydown', function(event) {
   );
 }
 
-// init();
-
 function kcdetector(event) {
-  const keypressed = parseInt(event.which);
+  const keypressed = parseInt(event.detail || event.which);
   if (keypressed === konamicode[index]) {
     index++;
     if (index === konamicode.length) {
